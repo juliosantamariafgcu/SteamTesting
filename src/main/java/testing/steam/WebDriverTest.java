@@ -16,7 +16,8 @@ public class WebDriverTest {
 
     @BeforeTest
     public void setDefaultDriverLocations() {
-        // System.setProperty(ChromeDriverService.CHROME_DRIVER_EXE_PROPERTY, "");
+        System.setProperty(ChromeDriverService.CHROME_DRIVER_EXE_PROPERTY,
+                "C:/Users/santa/Downloads/java/chromedriver-win64/chromedriver-win64/chromedriver.exe");
         // System.setProperty(EdgeDriverService.EDGE_DRIVER_EXE_PROPERTY, "");
         // System.setProperty(GeckoDriverService.GECKO_DRIVER_EXE_PROPERTY, "");
     }

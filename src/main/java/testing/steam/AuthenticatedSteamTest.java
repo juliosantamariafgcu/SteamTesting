@@ -34,7 +34,7 @@ public class AuthenticatedSteamTest extends WebDriverTest {
             )
         );
 
-        // NOTE(Daniel): Small delays make the sign in process succeed more consistently.
+        // NOTE(Daniel): Small delays make the sign-in process succeed more consistently.
         WebElement accountNameTextBox = driver.findElement(accountNameTextBoxLocator);
         WebElement passwordTextBox = driver.findElement(passwordTextBoxLocator);
         WebElement signInButton = driver.findElement(signInButtonLocator);
@@ -43,6 +43,7 @@ public class AuthenticatedSteamTest extends WebDriverTest {
         passwordTextBox.sendKeys(password);
         Thread.sleep(500);
         signInButton.click();
+        driver.manage().window().maximize();
 
         // Wait until the sign in process is complete.
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("store_header")));

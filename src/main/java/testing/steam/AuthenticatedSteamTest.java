@@ -19,8 +19,8 @@ public class AuthenticatedSteamTest extends WebDriverTest {
     public void signIn() throws InterruptedException {
         driver.get("https://store.steampowered.com/login/");
 
-        String accountName = System.getenv(ACCOUNT_NAME);
-        String password = System.getenv(PASSWORD);
+        String accountName = getAccountName();
+        String password = getPassword();
 
         Wait<WebDriver> wait = new WebDriverWait(driver, SIGN_IN_TIMEOUT);
         By accountNameTextBoxLocator = By.cssSelector("div.page_content form input[type='text']");
@@ -60,5 +60,13 @@ public class AuthenticatedSteamTest extends WebDriverTest {
         WebElement dropdown = driver.findElement(By.id("account_dropdown"));
         WebElement signOutLink = dropdown.findElement(By.xpath(".//a[@class='popup_menu_item'][last()]"));
         signOutLink.click();
+    }
+
+    protected String getAccountName() {
+        return System.getenv(ACCOUNT_NAME);
+    }
+
+    protected String getPassword() {
+        return System.getenv(PASSWORD);
     }
 };

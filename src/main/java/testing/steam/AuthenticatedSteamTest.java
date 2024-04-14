@@ -45,7 +45,7 @@ public class AuthenticatedSteamTest extends WebDriverTest {
         signInButton.click();
         driver.manage().window().maximize();
 
-        // Wait until the sign in process is complete.
+        // Wait until the sign-in process is complete.
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("store_header")));
         Assert.assertEquals(driver.getCurrentUrl(), "https://store.steampowered.com/");
     }

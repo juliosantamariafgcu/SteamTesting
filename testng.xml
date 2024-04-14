@@ -5,4 +5,10 @@
       <class name="testing.steam.SignIn" />
     </classes>
   </test>
+  <test name="Support Page">
+    <classes>
+      <class name="testing.steam.AuthenticatedSupport" />
+      <class name="testing.steam.UnauthenticatedSupport" />
+    </classes>
+  </test>
 </suite>

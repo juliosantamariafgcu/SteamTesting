@@ -110,7 +110,7 @@ public class StoreTabSteamTest extends AuthenticatedSteamTest{
         driver.findElement(By.xpath("//*[@id=\"global_header\"]/div/div[2]/a[1]")).click();
         Thread.sleep(500);
 
-        // Valve Index Link
+        // Racing Category Link
         driver.findElement(By.linkText("Racing")).click();
         url_current = driver.getCurrentUrl();
         Thread.sleep(500);
@@ -122,7 +122,7 @@ public class StoreTabSteamTest extends AuthenticatedSteamTest{
         driver.findElement(By.xpath("//*[@id=\"global_header\"]/div/div[2]/a[1]")).click();
         Thread.sleep(500);
 
-        // Steam Deck Link
+        // Indie Category Link
         driver.findElement(By.linkText("Indie")).click();
         url_current = driver.getCurrentUrl();
         Thread.sleep(500);

@@ -10,7 +10,7 @@ import org.openqa.selenium.firefox.GeckoDriverService;
 import org.testng.annotations.*;
 
 public class WebDriverTest {
-    private final String WEB_DRIVER = "STEAM_WEB_DRIVER";
+    private static final String WEB_DRIVER = "STEAM_WEB_DRIVER";
 
     protected WebDriver driver;
 

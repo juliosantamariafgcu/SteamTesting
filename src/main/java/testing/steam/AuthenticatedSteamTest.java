@@ -11,9 +11,9 @@ import org.testng.Assert;
 import org.testng.annotations.*;
 
 public class AuthenticatedSteamTest extends WebDriverTest {
-    private final String ACCOUNT_NAME = "STEAM_ACCOUNT_NAME";
-    private final String PASSWORD = "STEAM_PASSWORD";
-    private final Duration SIGN_IN_TIMEOUT = Duration.ofSeconds(5);
+    private static final String ACCOUNT_NAME = "STEAM_ACCOUNT_NAME";
+    private static final String PASSWORD = "STEAM_PASSWORD";
+    private static final Duration SIGN_IN_TIMEOUT = Duration.ofSeconds(5);
 
     @BeforeClass
     public void signIn() throws InterruptedException {

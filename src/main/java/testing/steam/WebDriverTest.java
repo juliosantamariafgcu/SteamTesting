@@ -40,6 +40,8 @@ public class WebDriverTest {
                     + "currently it is '" + choice + "'";
                 throw new RuntimeException(message);
         }
+        // Maximize the window so that no UI elements are hidden.
+        driver.manage().window().maximize();
     }
 
     @AfterClass(alwaysRun = true)

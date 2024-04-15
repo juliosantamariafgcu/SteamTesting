@@ -43,7 +43,6 @@ public class AuthenticatedSteamTest extends WebDriverTest {
         passwordTextBox.sendKeys(password);
         Thread.sleep(500);
         signInButton.click();
-        driver.manage().window().maximize();
 
         // Wait until the sign-in process is complete.
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("store_header")));

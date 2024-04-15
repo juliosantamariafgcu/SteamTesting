@@ -11,16 +11,16 @@ import org.testng.Assert;
 import org.testng.annotations.*;
 
 public class AuthenticatedSteamTest extends WebDriverTest {
-    private final String ACCOUNT_NAME = "STEAM_ACCOUNT_NAME";
-    private final String PASSWORD = "STEAM_PASSWORD";
-    private final Duration SIGN_IN_TIMEOUT = Duration.ofSeconds(5);
+    private static final String ACCOUNT_NAME = "STEAM_ACCOUNT_NAME";
+    private static final String PASSWORD = "STEAM_PASSWORD";
+    private static final Duration SIGN_IN_TIMEOUT = Duration.ofSeconds(5);
 
     @BeforeClass
     public void signIn() throws InterruptedException {
         driver.get("https://store.steampowered.com/login/");
 
-        String accountName = System.getenv(ACCOUNT_NAME);
-        String password = System.getenv(PASSWORD);
+        String accountName = getAccountName();
+        String password = getPassword();
 
         Wait<WebDriver> wait = new WebDriverWait(driver, SIGN_IN_TIMEOUT);
         By accountNameTextBoxLocator = By.cssSelector("div.page_content form input[type='text']");
@@ -43,7 +43,6 @@ public class AuthenticatedSteamTest extends WebDriverTest {
         passwordTextBox.sendKeys(password);
         Thread.sleep(500);
         signInButton.click();
-        driver.manage().window().maximize();
 
         // Wait until the sign-in process is complete.
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("store_header")));
@@ -60,5 +59,13 @@ public class AuthenticatedSteamTest extends WebDriverTest {
         WebElement dropdown = driver.findElement(By.id("account_dropdown"));
         WebElement signOutLink = dropdown.findElement(By.xpath(".//a[@class='popup_menu_item'][last()]"));
         signOutLink.click();
+    }
+
+    protected String getAccountName() {
+        return System.getenv(ACCOUNT_NAME);
+    }
+
+    protected String getPassword() {
+        return System.getenv(PASSWORD);
     }
 };

@@ -10,7 +10,7 @@ import org.openqa.selenium.firefox.GeckoDriverService;
 import org.testng.annotations.*;
 
 public class WebDriverTest {
-    private final String WEB_DRIVER = "STEAM_WEB_DRIVER";
+    private static final String WEB_DRIVER = "STEAM_WEB_DRIVER";
 
     protected WebDriver driver;
 
@@ -40,6 +40,8 @@ public class WebDriverTest {
                     + "currently it is '" + choice + "'";
                 throw new RuntimeException(message);
         }
+        // Maximize the window so that no UI elements are hidden.
+        driver.manage().window().maximize();
     }
 
     @AfterClass(alwaysRun = true)

@@ -14,11 +14,11 @@ import org.testng.annotations.*;
 import testing.steam.WebDriverTest;
 
 public class SignIn extends WebDriverTest {
-    private final String ACCOUNT_NAME = "STEAM_ACCOUNT_NAME";
-    private final String PASSWORD = "STEAM_PASSWORD";
-    private final String SIGN_IN_URL = "https://store.steampowered.com/login/";
-    private final Duration SIGN_IN_TIMEOUT = Duration.ofSeconds(5);
-    private final Duration SIGN_OUT_TIMEOUT = Duration.ofSeconds(20);
+    private static final String ACCOUNT_NAME = "STEAM_ACCOUNT_NAME";
+    private static final String PASSWORD = "STEAM_PASSWORD";
+    private static final String SIGN_IN_URL = "https://store.steampowered.com/login/";
+    private static final Duration SIGN_IN_TIMEOUT = Duration.ofSeconds(5);
+    private static final Duration SIGN_OUT_TIMEOUT = Duration.ofSeconds(20);
 
     @Test(groups = {"signedOut"})
     public void navigateToSignInPage() {

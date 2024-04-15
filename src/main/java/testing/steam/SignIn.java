@@ -50,7 +50,7 @@ public class SignIn extends WebDriverTest {
     }
 
     @Test(groups = {"signedOut"})
-    public void redirectToSignInPage() throws URISyntaxException {
+    public void redirectToSignInPage() throws URISyntaxException, InterruptedException {
         driver.get("https://store.steampowered.com/");
         WebElement byFriendsLink = driver.findElement(By.linkText("By Friends"));
         byFriendsLink.click();

@@ -34,6 +34,11 @@ public class Wishlist extends IdentifiedSteamTest {
         Assert.assertEquals(currentUrl.getScheme(), expected.getScheme());
         Assert.assertEquals(currentUrl.getHost(), expected.getHost());
         Assert.assertEquals(currentUrl.getPath(), expected.getPath());
+
+        // Make sure our display name is visible.
+        String displayName = getDisplayName().toLowerCase();
+        WebElement header = driver.findElement(By.className("wishlist_header"));
+        Assert.assertEquals(header.getText().toLowerCase(), displayName + "'s wishlist");
     }
 
     @Test(priority = 2)

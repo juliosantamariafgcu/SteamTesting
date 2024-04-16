@@ -16,4 +16,9 @@
       <class name="testing.steam.Wishlist" />
     </classes>
   </test>
+  <test name="Search Filters">
+    <classes>
+      <class name="testing.steam.SearchFilters" />
+    </classes>
+  </test>
 </suite>

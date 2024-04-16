@@ -21,4 +21,19 @@
       <class name="testing.steam.SearchFilters" />
     </classes>
   </test>
+  <test name="Adding Game">
+    <classes>
+      <class name="testing.steam.AddingGameTest" />
+    </classes>
+  </test>
+  <test name="Deleting Game">
+    <classes>
+      <class name="testing.steam.DeletingGameTest" />
+    </classes>
+  </test>
+  <test name="Store Tab">
+    <classes>
+      <class name="testing.steam.StoreTabSteamTest" />
+    </classes>
+  </test>
 </suite>

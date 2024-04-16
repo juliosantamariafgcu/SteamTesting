@@ -11,4 +11,9 @@
       <class name="testing.steam.UnauthenticatedSupport" />
     </classes>
   </test>
+  <test name="Wishlist">
+    <classes>
+      <class name="testing.steam.Wishlist" />
+    </classes>
+  </test>
 </suite>

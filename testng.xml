@@ -36,4 +36,19 @@
       <class name="testing.steam.StoreTabSteamTest" />
     </classes>
   </test>
+  <test name="Adding/Deleting Portal">
+    <classes>
+      <class name="testing.steam.AddingDeletingPortal" />
+    </classes>
+  </test>
+  <test name="Birthday Authentication">
+    <classes>
+      <class name="testing.steam.BirthdayAuthentication" />
+    </classes>
+  </test>
+  <test name="Game Page">
+    <classes>
+      <class name="testing.steam.GamePageTest" />
+    </classes>
+  </test>
 </suite>

@@ -11,7 +11,7 @@ public class StoreTabSteamTest extends AuthenticatedSteamTest{
         String url_expected = "https://store.steampowered.com";
         String url_current = driver.getCurrentUrl();
         Assert.assertFalse(url_current.equals(url_expected),"URLs Match!\n\n");
-        System.out.println("Urls Do Not Match!\n\n");
+        System.out.println("Urls Do Not Match!\n");
     }
 
     @Test (priority = 1)
@@ -25,7 +25,7 @@ public class StoreTabSteamTest extends AuthenticatedSteamTest{
         System.out.println("On Tags Page!\n\n");
         System.out.println("Current URL: ");
         System.out.println(url_current);
-        System.out.println("\n\n");
+        System.out.println("\n");
         driver.findElement(By.xpath("//*[@id=\"global_header\"]/div/div[2]/a[1]")).click();
         Thread.sleep(500);
 
@@ -36,7 +36,7 @@ public class StoreTabSteamTest extends AuthenticatedSteamTest{
         System.out.println("On Upcoming Page!\n\n");
         System.out.println("Current URL: ");
         System.out.println(url_current);
-        System.out.println("\n\n");
+        System.out.println("\n");
         driver.findElement(By.xpath("//*[@id=\"global_header\"]/div/div[2]/a[1]")).click();
         Thread.sleep(500);
 
@@ -47,7 +47,7 @@ public class StoreTabSteamTest extends AuthenticatedSteamTest{
         System.out.println("On Steam Deck Dock Page!\n\n");
         System.out.println("Current URL: ");
         System.out.println(url_current);
-        System.out.println("\n\n");
+        System.out.println("\n");
         driver.findElement(By.xpath("//*[@id=\"global_header\"]/div/div[2]/a[1]")).click();
         Thread.sleep(500);
 
@@ -58,7 +58,7 @@ public class StoreTabSteamTest extends AuthenticatedSteamTest{
         System.out.println("On Free to Play Page!\n\n");
         System.out.println("Current URL: ");
         System.out.println(url_current);
-        System.out.println("\n\n");
+        System.out.println("\n");
         driver.findElement(By.xpath("//*[@id=\"global_header\"]/div/div[2]/a[1]")).click();
         Thread.sleep(500);
 
@@ -70,7 +70,7 @@ public class StoreTabSteamTest extends AuthenticatedSteamTest{
         System.out.println("On Points Shop Page!\n\n");
         System.out.println("Current URL: ");
         System.out.println(url_current);
-        System.out.println("\n\n");
+        System.out.println("\n");
         driver.findElement(By.xpath("//*[@id=\"global_header\"]/div/div[2]/a[1]")).click();
         Thread.sleep(500);
 
@@ -82,7 +82,7 @@ public class StoreTabSteamTest extends AuthenticatedSteamTest{
         System.out.println("On News Page!\n\n");
         System.out.println("Current URL: ");
         System.out.println(url_current);
-        System.out.println("\n\n");
+        System.out.println("\n");
         driver.findElement(By.xpath("//*[@id=\"global_header\"]/div/div[2]/a[1]")).click();
         Thread.sleep(500);
 
@@ -94,7 +94,7 @@ public class StoreTabSteamTest extends AuthenticatedSteamTest{
         System.out.println("On Wishlist Page!\n\n");
         System.out.println("Current URL: ");
         System.out.println(url_current);
-        System.out.println("\n\n");
+        System.out.println("\n");
         driver.findElement(By.xpath("//*[@id=\"global_header\"]/div/div[2]/a[1]")).click();
         Thread.sleep(500);
 
@@ -106,7 +106,7 @@ public class StoreTabSteamTest extends AuthenticatedSteamTest{
         System.out.println("On Support Page!\n\n");
         System.out.println("Current URL: ");
         System.out.println(url_current);
-        System.out.println("\n\n");
+        System.out.println("\n");
         driver.findElement(By.xpath("//*[@id=\"global_header\"]/div/div[2]/a[1]")).click();
         Thread.sleep(500);
 
@@ -118,7 +118,7 @@ public class StoreTabSteamTest extends AuthenticatedSteamTest{
         System.out.println("On Racing Category Page!\n\n");
         System.out.println("Current URL: ");
         System.out.println(url_current);
-        System.out.println("\n\n");
+        System.out.println("\n");
         driver.findElement(By.xpath("//*[@id=\"global_header\"]/div/div[2]/a[1]")).click();
         Thread.sleep(500);
 
@@ -130,7 +130,7 @@ public class StoreTabSteamTest extends AuthenticatedSteamTest{
         System.out.println("On Indie Category Page!\n\n");
         System.out.println("Current URL: ");
         System.out.println(url_current);
-        System.out.println("\n\n");
+        System.out.println("\n");
         driver.findElement(By.xpath("//*[@id=\"global_header\"]/div/div[2]/a[1]")).click();
         Thread.sleep(500);
     }
@@ -148,7 +148,7 @@ public class StoreTabSteamTest extends AuthenticatedSteamTest{
         System.out.println("On DLC Page!\n\n");
         System.out.println("Current URL: ");
         System.out.println(url_current);
-        System.out.println("\n\n");
+        System.out.println("\n");
         driver.findElement(By.xpath("//*[@id=\"global_header\"]/div/div[2]/a[1]")).click();
         Thread.sleep(500);
 
@@ -161,7 +161,7 @@ public class StoreTabSteamTest extends AuthenticatedSteamTest{
         System.out.println("On Top Sellers Page!\n\n");
         System.out.println("Current URL: ");
         System.out.println(url_current);
-        System.out.println("\n\n");
+        System.out.println("\n");
         driver.findElement(By.xpath("//*[@id=\"global_header\"]/div/div[2]/a[1]")).click();
         Thread.sleep(500);
 
@@ -174,7 +174,7 @@ public class StoreTabSteamTest extends AuthenticatedSteamTest{
         System.out.println("On Card & Board Games Page!\n\n");
         System.out.println("Current URL: ");
         System.out.println(url_current);
-        System.out.println("\n\n");
+        System.out.println("\n");
         driver.findElement(By.xpath("//*[@id=\"global_header\"]/div/div[2]/a[1]")).click();
         Thread.sleep(500);
     }

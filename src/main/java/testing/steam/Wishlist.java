@@ -89,7 +89,9 @@ public class Wishlist extends IdentifiedSteamTest {
         removeGameFromWishlist(PORTAL_STORIES_MEL_ID);
     }
 
-    @Test(priority = 8)
+    // FIXME: This test interferes with other wishlist tests that try to remove
+    // games from the wishlist.
+    @Test(priority = 8, enabled = false)
     public void clearWishlist() {
         driver.get(MY_WISHLIST_URL);
         List<String> gameIds = getWishlistGameIds();

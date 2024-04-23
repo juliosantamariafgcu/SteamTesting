@@ -36,9 +36,9 @@
       <class name="testing.steam.StoreTabSteamTest" />
     </classes>
   </test>
-  <test name="Adding/Deleting Portal">
+  <test name="Adding/Deleting Fallout: New Vegas">
     <classes>
-      <class name="testing.steam.AddingDeletingPortal" />
+      <class name="testing.steam.AddingDeletingFalloutNV" />
     </classes>
   </test>
   <test name="Birthday Authentication">
